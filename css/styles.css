@@ -1,0 +1,199 @@
+:root {
+  --title-color: #212121;
+  --brand-color: #2196f3;
+  --main-text-color: #757575;
+  --main-white-color: #ffffff;
+  --address-link-color: rgba(255, 255, 255, 0.6);
+  --solid-black-color: #000000;
+  --secondary-background-color: #2f303a;
+  --light-background-color: #f5f4fa;
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+}
+/* =======================  index.html styles =======================  */
+/* header */
+.logo {
+  color: var(--solid-black-color);
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.logo .left-part {
+  color: var(--brand-color);
+}
+.nav-list {
+  list-style: none;
+}
+.nav-item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--title-color);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--brand-color);
+}
+.current {
+  color: var(--brand-color);
+}
+.contacts-list {
+  list-style: none;
+}
+.contacts-item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--brand-color);
+}
+/* main content section */
+/* hero section */
+.hero-section {
+  background-color: var(--secondary-background-color);
+}
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4;
+  color: var(--main-white-color);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  font-family: inherit;
+  color: var(--main-white-color);
+  background-color: var(--brand-color);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+/* benefits section */
+.benefits-section .list {
+  list-style: none;
+}
+.benefits-section .title {
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.benefits-section .post {
+  font-size: 14px;
+  line-height: 1.8;
+}
+/* our services section */
+.services-list {
+  list-style: none;
+}
+.services-section .title {
+  color: var(--title-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+/* our team section */
+.our-team-section {
+  background-color: var(--light-background-color);
+}
+.our-team-section .list {
+  list-style: none;
+}
+.our-team-section .title {
+  color: var(--title-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.our-team-section .subtitle {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.worker-speciality {
+  font-size: 16px;
+  line-height: 1.2;
+}
+/* footer */
+.footer {
+  background-color: var(--secondary-background-color);
+}
+.footer .logo {
+  color: var(--main-white-color);
+}
+.footer-address-list {
+  list-style: none;
+}
+.footer-address-list .address-link {
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--main-white-color);
+  line-height: 1.8;
+}
+.footer-address-list .address-contact {
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--main-white-color), 60%;
+  line-height: 1.8;
+}
+.footer-address-list .address-link:hover,
+.footer-address-list .address-link:focus,
+.footer-address-list .address-contact:hover,
+.footer-address-list .address-contact:focus {
+  color: var(--brand-color);
+}
+/* ======================= portfolio.html main section styles ================================ */
+.filter-buttons-list {
+  list-style: none;
+}
+.filter-button {
+  font-family: inherit;
+  color: var(--title-color);
+  background-color: var(--light-background-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: inherit;
+}
+.filter-button:hover,
+.filter-button:focus {
+  cursor: pointer;
+  color: var(--main-white-color);
+  background-color: var(--brand-color);
+}
+.projects-list {
+  list-style: none;
+}
+.project-card {
+  text-decoration: none;
+  color: inherit;
+}
+.project-name {
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-class {
+  font-size: 16px;
+  line-height: 1.9;
+}
