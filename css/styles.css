@@ -30,11 +30,17 @@ ul {
   padding: 0;
   list-style: none;
 }
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 /* =======================  index.html styles =======================  */
 /* container */
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .section {
   padding-top: 94px;
@@ -53,9 +59,6 @@ ul {
   display: flex;
   align-items: center;
 }
-.navbar .link {
-  padding: auto;
-}
 .contacts-list {
   display: flex;
   flex-wrap: wrap;
@@ -71,20 +74,19 @@ ul {
   text-decoration: none;
   margin-right: 93px;
 }
-.logo .left-part {
+.logo-left-part {
   color: var(--brand-color);
 }
-.navbar .list {
+.nav-list {
   display: flex;
-  flex-wrap: wrap;
 }
-.navbar .item {
+.nav-item {
   padding: 20px 0;
 }
-.navbar .item:not(:last-child) {
+.nav-item:not(:last-child) {
   margin-right: 50px;
 }
-.navbar .link {
+.nav-link {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
@@ -158,7 +160,7 @@ ul {
   height: 1px;
   margin: -1px;
 }
-.benefits .list {
+.benefits-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -168,7 +170,7 @@ ul {
 .benefits-item:not(:last-child) {
   margin-right: 30px;
 }
-.benefits .title {
+.benefits-subtitle {
   color: var(--title-color);
   text-transform: uppercase;
   font-size: 14px;
@@ -176,15 +178,15 @@ ul {
   line-height: 1.2;
   margin-bottom: 10px;
 }
-.benefits .text {
+.benefits-text {
   font-size: 14px;
   line-height: 1.8;
 }
 /* our services section */
-.about-us.section {
+.about.section {
   padding-top: 0;
 }
-.about-us .title {
+.about-title {
   color: var(--title-color);
   font-size: 36px;
   font-weight: 700;
@@ -192,29 +194,22 @@ ul {
   text-align: center;
   margin-bottom: 50px;
 }
-.about-us .list {
+.about-list {
   display: flex;
-  flex-wrap: wrap;
 }
-.about-us .item:not(:last-child) {
+.about-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.about-us img {
-  display: block;
-}
 /* our team section */
-.our-team {
+.team {
   background-color: var(--light-background-color);
-}
-.our-team img {
-  display: block;
 }
 .member-info {
   background-color: var(--main-white-color);
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.our-team .title {
+.team-title {
   color: var(--title-color);
   font-size: 36px;
   font-weight: 700;
@@ -222,20 +217,21 @@ ul {
   text-align: center;
   margin-bottom: 50px;
 }
-.our-team .list {
+.team-cards {
   display: flex;
   flex-wrap: wrap;
 }
 
-.our-team .item:not(:last-child) {
-  padding-right: 30px;
+.team-cards-item:not(:last-child) {
+  margin-right: 30px;
 }
-.our-team .subtitle {
+.team-subtitle {
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 10px;
 }
 .worker-speciality {
   font-size: 16px;
@@ -245,42 +241,49 @@ ul {
 /* footer */
 .footer {
   background-color: var(--secondary-background-color);
-}
-.footer .container {
   padding: 60px 0;
 }
-.footer .logo {
+.footer-logo {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 1.4;
+  text-decoration: none;
   color: var(--main-white-color);
+  margin: 0;
 }
-.footer-address .list .link {
+.footer-address-list {
+  margin-top: 20px;
+}
+.footer-map-link {
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
   color: var(--main-white-color);
   line-height: 1.8;
-  margin-top: 20px;
 }
-.footer-address .contact-link {
+.footer-contact-link {
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
   color: var(--main-white-color), 60%;
   line-height: 1.8;
 }
-.footer-address .link:hover,
-.footer-address .link:focus,
-.footer-address .contact-link:hover,
-.footer-address .contact-link:focus {
+.footer-map-link:hover,
+.footer-map-link:focus,
+.footer-contact-link:hover,
+.footer-contact-link:focus {
   color: var(--brand-color);
 }
-.footer-address {
-  margin-top: 20px;
-}
-.footer-address .item:not(:last-child) {
+.footer-address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 /* ======================= portfolio.html main section styles ================================ */
-.filter .button {
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.filter-button {
   font-family: inherit;
   color: var(--title-color);
   background-color: var(--light-background-color);
@@ -293,11 +296,11 @@ ul {
   display: block;
   padding: 6px 22px;
 }
-.filter li:not(:last-child) {
+.filter-item:not(:last-child) {
   margin-right: 8px;
 }
-.filter .button:hover,
-.filter .button:focus {
+.filter-button:hover,
+.filter-button:focus {
   cursor: pointer;
   color: var(--main-white-color);
   background-color: var(--brand-color);
@@ -305,21 +308,17 @@ ul {
 .filter {
   margin-bottom: 50px;
 }
-.filter .list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 /* ==============card-set============ */
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -1 * var(--card-set-gap);
-  margin-right: -1 * var(--card-set-gap);
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
 }
-.card-set > .item {
-  margin-bottom: var(--card-set-gap);
-  margin-right: var(--card-set-gap);
+.card-set-item {
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
   flex-basis: calc((100% - 90px) / 3);
 }
 .card-content {
@@ -328,11 +327,7 @@ ul {
   border-bottom: 1px solid var(--card-border-color);
   border-right: 1px solid var(--card-border-color);
 }
-.card-set img {
-  display: block;
-  max-width: 100%;
-}
-.project-card {
+.project-link {
   text-decoration: none;
   color: inherit;
 }
