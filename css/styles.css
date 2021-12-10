@@ -95,11 +95,11 @@ img {
   text-decoration: none;
   padding: 20px 0;
 }
-.navbar .link:hover,
-.navbar .link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--brand-color);
 }
-.navbar .current {
+.nav-link.current {
   color: var(--brand-color);
 }
 .contacts-link {
